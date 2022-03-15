@@ -3,7 +3,7 @@ const bodyParser =require('body-parser')
 const dotenv =require ('dotenv')
 // const cors =require('cors')
 
-const {mongooseConnect} =('./config/mongoConfig')
+// const {mongooseConnect} =('./config/mongoConfig')
 const morgan = require ('morgan')
 
 const app = express()
@@ -22,5 +22,5 @@ app.use('/', (req,res)=>{
 
 app.listen(PORT, ()=>{
     console.log(PORT)
-    mongooseConnect()
+    // mongooseConnect()
 })
