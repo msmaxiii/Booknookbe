@@ -17,7 +17,7 @@ orderRouter.get('/', (req,res)=>{
 })
 orderRouter.post('/',(req,res)=>{
     const order = req.body 
-    order.create(order, (error, result)=>{
+    Order.create(order, (error, result)=>{
         if(error){
             res.status(400).json({message: error.message})
         }

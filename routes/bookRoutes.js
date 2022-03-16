@@ -8,10 +8,10 @@ bookRouter.get('/', (req,res)=>{
         if (error){
             res.status(500).json({message:error.message})
         }
-        if (result --- null || result ===[]){
+        if (result === null || result ===[]){
             res.status(404).json({message:error.message})
         }
-        res.status(200).json({message:"Book Found"})
+        res.status(200).json({books:result})
     })
    
 })

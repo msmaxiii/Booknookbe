@@ -7,4 +7,4 @@ const orderSchema = new mongoose.Schema({
     email:{type:String, required:true}
 
 })
-module.exports = orderSchema
+module.exports = mongoose.model('order',orderSchema)
